@@ -61,7 +61,7 @@ resource "aws_iam_instance_profile" "instance_profile" {
 
 
 resource "aws_instance" "web_server" {
-  ami                    = "ami-094125af156557ca2"
+  ami                    = "ami-0ceecbb0f30a902a6"
   instance_type          = "t3.small"
   key_name               = var.key_pair_name  
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
